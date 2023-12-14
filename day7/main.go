@@ -19,15 +19,6 @@ const (
 	FIVE
 )
 
-var cardStrength map[rune]int
-
-func init() {
-	cardStrength = make(map[rune]int)
-	for i, r := range "23456789TJQKA" {
-		cardStrength[r] = i
-	}
-}
-
 type handBid struct {
 	hand     string
 	bid      int
